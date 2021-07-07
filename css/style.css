@@ -1,0 +1,749 @@
+
+/* общие стили */
+html{
+    font-size: 1vw;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+    color: white;
+    text-transform: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+	max-width: 60%;
+    margin: 0 auto;
+}
+
+.button_order{
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: uppercase;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1vw 1vw;
+    line-height: 1rem;
+    border-width: 0px;
+    border-style: outset;
+    border-radius: 2vw;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    -webkit-box-shadow: 6px 7px 9px -2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 6px 7px 9px -2px rgba(0, 0, 0, 0.33);
+    box-shadow: 6px 7px 9px -2px rgba(0, 0, 0, 0.33);
+}
+
+.button_order:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.description{
+    width: 50%;
+    padding-bottom: 22vw;
+    position: relative;
+    z-index: 2;
+}
+
+.description_text h1{
+    font-size: 4rem;
+    line-height: 4.5vw;
+    font-weight: 200;
+    vertical-align: center;
+}
+
+.description_text .h1_bold{
+    font-weight: bold;
+}
+
+.description_text p{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    line-height: 2vw;
+    font-weight: normal;
+    vertical-align: center;
+    text-align: left;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.07rem;
+}
+
+.general_flexbox{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10vw;
+}
+
+.local_flexbox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+form input:focus-visible {
+    outline: none;
+}
+
+.button_flexbox{
+   display: flex;
+   justify-content: flex-end;
+}
+
+form .button_order{
+    margin-top: 2vw;
+    padding: 0.5vw 2vw;
+    background-color: #ee516f; 
+    position: relative;
+    right: 0;
+}
+
+form a{
+	color: white;
+    font-size: 1rem;
+    font-weight: bold;
+	padding: 0px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------ */
+/* стили для меню сайта */
+
+.header_logo{
+    position: absolute;
+    z-index: 10;
+    top: 3vw;
+    left: 5vw;
+    width: 10vw;
+}
+
+.header_logo a{
+    width: 100%;
+}
+
+.header_logo img{
+    width: 100%;
+}
+
+header .bars{
+    display: none;
+}
+
+header .backArrow{
+    display: none;
+}
+
+.header_content-inner{
+    padding: 5vw 0px 6vw 0px;
+    width: 120%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(0%);
+}
+
+.menu li{
+	display: inline-block;
+}
+
+.menu a{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+	padding: 0px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu a:hover{
+	text-decoration: underline; /* Подчёркивание */
+    text-decoration-style: wavy; /* Волнистая линия */
+    text-decoration-color:white; /* Цвет подчёркивания */
+}
+
+.menu .button_order a{
+    color: #ff6633;
+    font-size: 1rem;
+}
+
+.menu .button_order a:hover{
+	text-decoration: none; /* Подчёркивание */
+}
+
+/* ------------------------------------ */
+/* стили для  header */
+header{
+    width: 100%;   
+    background-color: rgb(255, 102, 51);
+    position: relative;
+}
+
+header svg {
+    position: relative;
+    width: 100%;
+}
+
+header svg path {
+    fill:#f7ead2;
+}
+
+header .description_text .button_order{
+    margin-top: 5vw;
+    padding: 1vw 2vw;
+    background-color: rgb(238, 81, 111);   
+}
+
+header .description_text a{
+	color: white;
+    font-size: 1rem;
+    font-weight: bold;
+	padding: 0px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header .header_person{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    width: 30vw;
+}
+
+header .header_person img{ 
+    width: 100%;
+}
+
+header .header_brush{
+    position: absolute;
+    top: -35%;
+    left: 7.5%;
+    z-index: 2;
+    width: 25vw;
+    transform: translateY(-20%);
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+header .header_brush img{ 
+    width: 100%;
+}
+
+header .header_person_and_brush_with_svg{
+    position: absolute;
+    bottom: -1%;
+    z-index: 1;
+    width: 100%;
+}
+
+.header_icons{
+    margin: 0px 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 15vw;
+}
+
+.header_icons a{
+    width: 20px;
+    height: 20px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.header_icons svg{
+    position: static;    
+    z-index: 1;
+    width: auto;
+    width: 20px;
+}
+
+.header_icons svg path{
+    fill:white;
+}
+
+.header_change_fon{
+    font-size: 1.2rem;
+    margin: 0vw 3vw;
+    width: 10px;
+    position: absolute;
+    top: -30vw;
+    right: 0px;
+}
+
+.header_change_fon svg{
+    position: static;    
+    z-index: 1;
+    width: auto;
+    width: 10px;
+    cursor: pointer;
+}
+
+.header_vertical_text{
+    writing-mode: vertical-rl;
+}
+
+/* ------------------------------------ */
+/* стили для  about_us */
+.about_us{
+    background-color:#f7ead2 ;
+    position: relative;
+}
+
+.about_us_person{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    z-index: 1;
+}
+
+.about_us_person img{
+    width: 100%;
+}
+
+.about_us .description_text{
+    color: black;
+    margin-left:15%;
+    width: 100%;  
+}
+
+.about_person .description_text{
+    width: 100%;
+    margin-left:0%;
+    margin-top: 3rem;
+}
+
+.about_person{
+    width: 85%;
+    margin-top: 5vw;
+    margin-left: 15%;
+}
+
+.about_person .description_text h3{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    vertical-align: center;
+} 
+
+.about_person .description_text p{
+    margin-top: 1rem;
+    text-align: left;
+    word-spacing: 0.1rem;
+}
+
+.about_us_balloon{
+    position: absolute;
+    bottom: -28vw;
+    right: 0vw;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 3s;
+}
+
+.about_us_balloon img{
+    width: 100%;
+}
+
+.about_person .button_order{
+    position: absolute;
+    bottom: 20%;
+}
+
+.about_us_person a{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+	padding: 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------ */
+/* стили для excellence */
+.excellence{
+    background-color: #f7ead2;
+    position: relative;    
+}
+
+.excellence .description{
+    padding-bottom: 0%;   
+}
+
+.excellence .description_text{
+    color: black;    
+}
+
+.excellence .description_text .button_order{
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    background-color: #ee516f;  
+}
+
+.excellence .description_text a{
+	color: white;
+    font-size: 1rem;
+    font-weight: bold;
+	padding: 0px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.excellence_colors{
+    width: 100%;
+    padding-bottom: 5vw;
+}
+
+.excellence_colors img{
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.excellence_brush_small_1,
+.excellence_brush_small_2,
+.excellence_water_colors{
+    width: 20%;
+    position:absolute;
+}
+
+.excellence_brush_small_1{
+    bottom: 13%;
+    left: -10%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition-duration: .5s;
+}
+
+.excellence_brush_small_2{
+    width: 15%;
+    bottom: 5%;
+    left: -7%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition-duration: .7s;
+    transition-delay: .2s;
+}
+
+.excellence_water_colors{
+    bottom: -5%;
+    left: -5%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition-duration: .7s;
+    transition-delay: .6s;
+}
+
+.excellence_brush_small_1 img,
+.excellence_brush_small_2 img,
+.excellence_water_colors img{
+    width: 100%;
+}
+
+.excellence .result_change {
+   display: none;
+}
+
+/* ------------------------------------ */
+/* стили для result */
+.result{
+    background-color: #f7ead2;
+    position: relative;    
+}
+
+.result .description{
+    padding-bottom: 0%;
+    z-index: 0;   
+}
+
+.result .description_text{
+    color: black;
+    width: 100%; 
+    margin-left: 15%;   
+}
+
+.result .description_text .button_order{
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    background-color: #ee516f;  
+}
+
+.result .description_text a{
+	color: white;
+    font-size: 1rem;
+    font-weight: bold;
+	padding: 0px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.result_works{
+    width: 50%;
+    margin-bottom: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_works img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.result_change{
+    position: absolute;
+    z-index: 1;
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result_prev,
+.result_next{
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 50% 50% ;
+    border: 1px solid #112431;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    background-color: #112431;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.result_prev svg,
+.result_next svg{
+    width: 15px;
+}
+
+.result_prev svg path,
+.result_next svg path{
+    fill:rgb(212, 210, 210);
+}
+
+.result .general_flexbox{
+    padding-bottom: 20vw;
+}
+
+.result_pencils{
+    width: 30%;
+    position:absolute;
+    bottom: 0%;
+    right: -17%;
+    z-index: 2;
+    transform: translateX(30%);
+    transition-duration: 1s;
+}
+
+.result_pencils img{
+    width: 100%;
+}
+
+/* ------------------------------------ */
+/* стили для footer */
+footer{
+    position: relative;
+    background-color: #ee516f;   
+}
+
+footer svg{
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+footer svg path {
+    fill:#ee516f;
+}
+
+footer .general_flexbox{
+    justify-content: space-between;
+    padding-bottom: 0vw;
+}
+
+.footer_contacts{
+    padding-top: 2vw;
+}
+
+.footer_logo{
+    width: 10vw;
+}
+
+.footer_logo a{
+    width: 100%;
+}
+
+.footer_logo img{
+    width: 100%;
+}
+
+.footer_icons{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_icons a{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_icons svg{
+    position: static;    
+    z-index: 1;
+    width: auto;
+    width: 20px;
+}
+
+.footer_icons svg path{
+    fill:white;
+}
+
+footer .menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .menu li a{
+	padding: 1em 0em;   
+}
+
+footer .menu button a{
+    padding: 0em 0em;
+    color: #ee516f;   
+}
+
+footer .button_order{   
+    margin: 1em 0em;
+    padding: 1vw 2vw;   
+}
+
+.footer_form{
+    width: 35%;
+    padding: 5% 5%;
+    background-color: white;
+    border-radius: 3vw 3vw 0 0;
+    position: absolute;
+    right: 10%;
+    transform: translateY(40%);
+    transition-duration: 1s;
+    z-index: 1;   
+}
+
+.footer_form_hidden{
+    width: 35%;
+    padding: 5% 5%;
+    background-color: white;
+    border-radius: 3vw 3vw 0 0;    
+}
+
+.footer_form h2,
+.footer_form_hidden h2{
+    color: black;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.footer_form span,
+.footer_form_hidden span{
+    display: block;
+    color: #ee516f;
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 1.1rem;
+}
+
+.footer_sharpener,
+.footer_pen,
+.footer_pen_black{
+    position:absolute;
+}
+
+.footer_sharpener{
+    width: 10%;
+    bottom: -5%;
+    left: 36%;
+    z-index: 2;
+    transform: translateY(30%);
+    transition-duration: 1s;
+}
+
+.footer_pen{
+    width: 8%;
+    bottom: -20%;
+    left: 45%;
+    z-index: 2;
+    transform: translateY(30%);
+    transition-duration: 1s;
+}
+
+.footer_pen_black{
+    width: 5%;
+    bottom: -20%;
+    left: 50%;
+    z-index: 2;
+    transform: translateY(30%);
+    transition-duration: 1s;
+}
+
+.footer_sharpener img,
+.footer_pen img,
+.footer_pen_black img{
+    width: 100%;
+}
+
+.container_for_footer{
+    position: relative;
+    overflow: hidden;
+}
